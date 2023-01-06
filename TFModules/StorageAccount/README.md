@@ -35,7 +35,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.38.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
@@ -55,7 +55,7 @@ No modules.
 | <a name="input_account_kind"></a> [account\_kind](#input\_account\_kind) | The type of storage account. Valid options are BlobStorage, BlockBlobStorage, FileStorage, Storage and StorageV2. | `string` | `"StorageV2"` | no |
 | <a name="input_account_replication_type"></a> [account\_replication\_type](#input\_account\_replication\_type) | Storage account replication type | `string` | `"LRS"` | no |
 | <a name="input_account_tier"></a> [account\_tier](#input\_account\_tier) | The performance of Storage account | `string` | `"Standard"` | no |
-| <a name="input_allow_blob_public_access"></a> [allow\_blob\_public\_access](#input\_allow\_blob\_public\_access) | allow blob public access | `bool` | `false` | no |
+| <a name="input_allow_nested_items_to_be_public"></a> [allow\_nested\_items\_to\_be\_public](#input\_allow\_nested\_items\_to\_be\_public) | Allow or disallow nested items within this Account to opt into being public. | `bool` | `false` | no |
 | <a name="input_bypass"></a> [bypass](#input\_bypass) | Network rules restricing access to the storage account - bypass | `string` | `"AzureServices"` | no |
 | <a name="input_default_action"></a> [default\_action](#input\_default\_action) | (Required) Specifies the default action of allow or deny when no other rules match. Valid options are Deny or Allow | `string` | `"Deny"` | no |
 | <a name="input_ip_rules"></a> [ip\_rules](#input\_ip\_rules) | (Optional) One or more IP Addresses, or CIDR Blocks which should be able to access the storage account. | `list(string)` | `[]` | no |

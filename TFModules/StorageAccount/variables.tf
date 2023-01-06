@@ -37,8 +37,14 @@ variable "access_tier" {
   default     = "Hot"
 }
 
-variable "allow_blob_public_access" {
-  description = "allow blob public access"
+# variable "allow_blob_public_access" {
+#   description = "allow blob public access"
+#   type        = bool
+#   default     = false
+# }
+
+variable "allow_nested_items_to_be_public" {
+  description = "Allow or disallow nested items within this Account to opt into being public. "
   type        = bool
   default     = false
 }

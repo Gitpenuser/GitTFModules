@@ -33,19 +33,20 @@
 # Create the Storage Account
 ############################
 resource "azurerm_storage_account" "sa" {
-  name                      = var.name
-  location                  = var.location
-  resource_group_name       = var.resource_group_name
-  account_kind              = var.account_kind
-  account_tier              = var.account_tier
-  account_replication_type  = var.account_replication_type
-  access_tier               = var.access_tier
-  allow_blob_public_access  = var.allow_blob_public_access
-  is_hns_enabled            = var.is_hns_enabled
-  tags                      = var.tags
-  enable_https_traffic_only = true
-  min_tls_version           = "TLS1_2"
-  shared_access_key_enabled = var.shared_access_key_enabled
+  name                     = var.name
+  location                 = var.location
+  resource_group_name      = var.resource_group_name
+  account_kind             = var.account_kind
+  account_tier             = var.account_tier
+  account_replication_type = var.account_replication_type
+  access_tier              = var.access_tier
+  # allow_blob_public_access  = var.allow_blob_public_access
+  allow_nested_items_to_be_public = var.allow_nested_items_to_be_public
+  is_hns_enabled                  = var.is_hns_enabled
+  tags                            = var.tags
+  enable_https_traffic_only       = true
+  min_tls_version                 = "TLS1_2"
+  shared_access_key_enabled       = var.shared_access_key_enabled
 
   network_rules {
     default_action             = var.default_action

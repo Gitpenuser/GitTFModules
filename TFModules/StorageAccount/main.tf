@@ -14,7 +14,7 @@
  * ## Code Example
  * ```hcl
  * module "sa" {
- *   source              = "git::https://dev.azure.com/<organization>/<project>/_git/modules//general/StorageAccount"
+ *   source              = "git::https://github.com/<user>/<repository>.git//TFModules/KeyVault"
  *   name                = "stmodule002"
  *   resource_group_name = "rg-tfmodules-001"
  *   tags = {

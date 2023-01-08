@@ -13,12 +13,12 @@
  * 
  * ## Certified Key Vault
  * 
- * To be certified, a Key Vault should
+ * To be certified, a Key Vault should (MoSCoW)
  * 
  * - Network rule -default-action-deny (SHOULD)
  * - Enable Purge Protection	(SHOULD)
  * - Enable Soft delete	(SHOULD)
- * - Use a private endpoint (SHOULD)
+ * - Use a private endpoint (COULD)
  * 
  * Out of scope: 
  * 

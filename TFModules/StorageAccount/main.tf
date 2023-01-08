@@ -3,14 +3,14 @@
  * # Storage Account
  * ## Certified Storage Account
  * 
- * To be certified, a storage account should
+ * To be certified, a storage account should (MoSCoW)
  * 
- * - Default Network rule - deny any
- * - enforced HTTPS
- * - enforced TLS 1.2
- * - Disallowed Shared Key authorization
- * - Disable anonymous public read access to containers and blobs
- * - Use private endpoints
+ * - Default Network rule - deny any (SHOULD)
+ * - enforced HTTPS (MUST)
+ * - enforced TLS 1.2 (MUST)
+ * - Disallowed Shared Key authorization (SHOULD)
+ * - Disable anonymous public read access to containers and blobs (SHOULD)
+ * - Use private endpoints (COULD)
  * ## Code Example
  * ```hcl
  * module "sa" {

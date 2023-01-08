@@ -21,7 +21,7 @@ variable "enable_accelerated_networking" {
 }
 
 variable "tags" {
-  description = "Tags: owner=jan.kowalski@nn.pl // appid=290 // environment=tst [options: dev/tst/prod] // description= test resource // deployment=auto [options:auto/manual] // costcenter=12345"
+  description = "Tags"
   type        = map(any)
   default     = {}
 }

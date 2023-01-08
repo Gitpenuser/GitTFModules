@@ -38,7 +38,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.38.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
@@ -62,7 +62,7 @@ No modules.
 | <a name="input_private_ip_address_allocation"></a> [private\_ip\_address\_allocation](#input\_private\_ip\_address\_allocation) | The allocation method used for the Private IP Address. Dynamic value not allowed | `string` | `"Static"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the Resource Group in which to create the Network Interface. Changing this forces a new resource to be created. | `any` | n/a | yes |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | The ID of the Subnet where this Network Interface should be located in. | `any` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | Tags: owner=jan.kowalski@nn.pl // appid=290 // environment=tst [options: dev/tst/prod] // description= test resource // deployment=auto [options:auto/manual] // costcenter=12345 | `map(any)` | `{}` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags | `map(any)` | `{}` | no |
 
 ## Outputs
 
